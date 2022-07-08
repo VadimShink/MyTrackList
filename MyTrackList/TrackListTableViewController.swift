@@ -20,6 +20,12 @@ class TrackListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! TrackDetailsViewController
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        viewController.track = trackList[indexPath.row]
+        
+    }
 
     // MARK: - Table view data source
     
