@@ -9,11 +9,12 @@ import UIKit
 
 class TrackListTableViewController: UITableViewController {
     
+    // Создание модельки треклиста
     var trackList = Track.getTrackList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Только визуальная часть, не удаляет
+        // Создание кнопки edit, только визуальная часть, не удаляет
         navigationItem.leftBarButtonItem = editButtonItem
 
         // Uncomment the following line to preserve selection between presentations
@@ -31,10 +32,12 @@ class TrackListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
+    // Количество строк в секции равно количеству элементов в массиве
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return trackList.count
     }
 
+    // Заполнение строк в секции данными из массива
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -46,6 +49,7 @@ class TrackListTableViewController: UITableViewController {
         return cell
     }
     
+    // Задали высоту ячейки
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -65,7 +69,7 @@ class TrackListTableViewController: UITableViewController {
         false
     }
     
-    // Перемещение выбранного трэка в списке, сперва удаляем его из массива и запоминаем, затем опять добавляем в массив по новому индексу
+    // Drag and drop, перемещение выбранного трэка в списке, сперва удаляем его из массива и запоминаем, затем опять добавляем в массив по новому индексу
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let currentTrack = trackList.remove(at: sourceIndexPath.row)
         trackList.insert(currentTrack, at: sourceIndexPath.row)
