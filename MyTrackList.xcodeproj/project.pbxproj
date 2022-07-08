@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		14B651F2287755630086CB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B651F1287755630086CB7D /* AppDelegate.swift */; };
 		14B651F4287755630086CB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B651F3287755630086CB7D /* SceneDelegate.swift */; };
-		14B651F6287755630086CB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B651F5287755630086CB7D /* ViewController.swift */; };
 		14B651F9287755630086CB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B651F7287755630086CB7D /* Main.storyboard */; };
 		14B651FB287755670086CB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B651FA287755670086CB7D /* Assets.xcassets */; };
 		14B651FE287755670086CB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B651FC287755670086CB7D /* LaunchScreen.storyboard */; };
+		14B65206287768E40086CB7D /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B65205287768E40086CB7D /* TrackListTableViewController.swift */; };
+		14B6520828776DD10086CB7D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6520728776DD10086CB7D /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14B651EE287755630086CB7D /* MyTrackList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTrackList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B651F1287755630086CB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14B651F3287755630086CB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14B651F5287755630086CB7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14B651F8287755630086CB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14B651FA287755670086CB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B651FD287755670086CB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B651FF287755670086CB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B65205287768E40086CB7D /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		14B6520728776DD10086CB7D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				14B651F1287755630086CB7D /* AppDelegate.swift */,
 				14B651F3287755630086CB7D /* SceneDelegate.swift */,
-				14B651F5287755630086CB7D /* ViewController.swift */,
+				14B65205287768E40086CB7D /* TrackListTableViewController.swift */,
+				14B6520728776DD10086CB7D /* Track.swift */,
 				14B651F7287755630086CB7D /* Main.storyboard */,
 				14B651FA287755670086CB7D /* Assets.xcassets */,
 				14B651FC287755670086CB7D /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B651F6287755630086CB7D /* ViewController.swift in Sources */,
 				14B651F2287755630086CB7D /* AppDelegate.swift in Sources */,
 				14B651F4287755630086CB7D /* SceneDelegate.swift in Sources */,
+				14B65206287768E40086CB7D /* TrackListTableViewController.swift in Sources */,
+				14B6520828776DD10086CB7D /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
